@@ -1,74 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on linux)" generated="20180718 01:01:43.256">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on linux)" generated="20180718 22:19:59.594">
 <suite id="s1" name="Test" source="/home/ruslan/PycharmProjects/Test_Assignment/Tests/test.robot">
-<test id="s1-t1" name="User must sign in to check out">
+<test id="s1-t1" name="Landing Page Is Loaded">
+<kw name="Begin Web Test" library="Common" type="setup">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>https://atomcream.com​</arg>
+<arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180718 01:01:43.393" level="INFO">Opening browser 'chrome' to base url 'https://atomcream.com​'.</msg>
-<status status="PASS" starttime="20180718 01:01:43.392" endtime="20180718 01:01:46.664"></status>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20180718 01:01:46.665" endtime="20180718 01:01:46.768"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>TECHNOLOGY STACK</arg>
-</arguments>
-<status status="PASS" starttime="20180718 01:01:46.768" endtime="20180718 01:01:46.792"></status>
-</kw>
-<kw name="Set Screenshot Directory" library="Selenium2Library">
-<doc>Sets the directory for captured screenshots.</doc>
-<arguments>
-<arg>screenshot/</arg>
-</arguments>
-<status status="PASS" starttime="20180718 01:01:46.792" endtime="20180718 01:01:46.793"></status>
-</kw>
+<msg timestamp="20180718 22:19:59.739" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>just.png</arg>
-</arguments>
-<msg timestamp="20180718 01:01:47.371" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/just.png"&gt;&lt;img src="../screenshot/just.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20180718 01:01:46.793" endtime="20180718 01:01:47.371"></status>
+<msg timestamp="20180718 22:19:59.748" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20180718 22:19:59.747" endtime="20180718 22:19:59.748"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3s</arg>
-</arguments>
-<msg timestamp="20180718 01:01:50.372" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20180718 01:01:47.371" endtime="20180718 01:01:50.372"></status>
+<msg timestamp="20180718 22:19:59.749" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20180718 22:19:59.739" endtime="20180718 22:19:59.749"></status>
 </kw>
+<status status="FAIL" starttime="20180718 22:19:59.738" endtime="20180718 22:19:59.750"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20180718 01:01:50.372" endtime="20180718 01:01:50.434"></status>
+<status status="PASS" starttime="20180718 22:19:59.751" endtime="20180718 22:19:59.751"></status>
+</kw>
+<status status="PASS" starttime="20180718 22:19:59.750" endtime="20180718 22:19:59.751"></status>
 </kw>
 <doc>This is some basic information</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20180718 01:01:43.391" endtime="20180718 01:01:50.434" critical="yes"></status>
+<status status="FAIL" starttime="20180718 22:19:59.737" endtime="20180718 22:19:59.751" critical="yes">Setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
 </test>
-<status status="PASS" starttime="20180718 01:01:43.257" endtime="20180718 01:01:50.436"></status>
+<status status="FAIL" starttime="20180718 22:19:59.595" endtime="20180718 22:19:59.753"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">Smoke</stat>
+<stat pass="0" fail="1">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20180718 22:19:59.732" level="ERROR">Error in file '/home/ruslan/PycharmProjects/Test_Assignment/Resources/Common.robot': Non-existing setting 'Test Setup'.</msg>
 </errors>
 </robot>

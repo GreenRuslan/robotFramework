@@ -1,0 +1,10 @@
+decorator==4.3.0
+docutils==0.14
+pkg-resources==0.0.0
+robotframework==3.0.4
+robotframework-ldtplibrary==10.2.2
+robotframework-selenium2library==3.0.0
+robotframework-seleniumlibrary==3.0.1
+selenium==3.13.0
+Selenium2LibraryExtension==1.1.0
+SeleniumLibraryExtension==0.0.7

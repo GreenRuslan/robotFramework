@@ -1,19 +1,16 @@
 *** Settings ***
 Library  Selenium2Library
-
-
+Resource  ../Resources/Common.robot
+Resource  ../Resources/pageobject/Landingpage.robot
+Test Setup  Common.Begin Web Test
+Test Teardown  Common.end web test
 
 
 *** Test Cases ***
-User must sign in to check out
+Landing Page Is Loaded
     [Documentation]  This is some basic information
     [Tags]  Smoke
-    open browser  https://atomcream.com​    chrome
-    Maximize Browser Window
-    wait until page contains    TECHNOLOGY STACK
-    set screenshot directory  screenshot/
-    capture page screenshot  just.png
-    sleep  3s
-    close browser
+    Landingpage.Go To The Landing Page
+    Landingpage.verify that the page is loaded
 
 
