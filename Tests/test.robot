@@ -1,16 +1,15 @@
 *** Settings ***
-Library  Selenium2Library
-Resource  ../Resources/Common.robot
-Resource  ../Resources/pageobject/Landingpage.robot
-Test Setup  Common.Begin Web Test
-Test Teardown  Common.end web test
+Resource  ../Resources/common.robot
+Resource  ../Resources/pageobject/landingpage.robot
+Test Setup   common.Begin Web Test
+Test Teardown  common.End web test
 
 
 *** Test Cases ***
 Landing Page Is Loaded
-    [Documentation]  This is some basic information
+    [Documentation]  This test checks that the landing page is loaded
     [Tags]  Smoke
-    Landingpage.Go To The Landing Page
-    Landingpage.verify that the page is loaded
+    landingpage.Go To The Landing Page
+    landingpage.verify that the page is loaded
 
 
