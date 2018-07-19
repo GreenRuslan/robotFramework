@@ -6,7 +6,6 @@ Library  Selenium2Library
 Go To The Landing Page
   # URL of the landing page
   go to  https://atomcream.com
-  ​
 
 Verify That The Page Is Loaded
 #Logic for checking that landing page is loaded

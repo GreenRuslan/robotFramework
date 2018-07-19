@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on linux)" generated="20180719 23:46:37.702">
-<suite id="s1" name="Test" source="/home/ruslan/PycharmProjects/Test_Assignment/Tests/test.robot">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on linux)" generated="20180720 00:01:51.723">
+<suite id="s1" name="Test" source="/home/ruslan/test/robotFramework/Tests/test.robot">
 <test id="s1-t1" name="Landing Page Is Loaded">
 <kw name="Begin Web Test" library="common" type="setup">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,32 +9,32 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180719 23:46:37.884" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20180719 23:46:37.884" endtime="20180719 23:46:39.356"></status>
+<msg timestamp="20180720 00:01:51.864" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20180720 00:01:51.863" endtime="20180720 00:01:53.342"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20180719 23:46:39.356" endtime="20180719 23:46:39.460"></status>
+<status status="PASS" starttime="20180720 00:01:53.342" endtime="20180720 00:01:53.444"></status>
 </kw>
 <kw name="Set Screenshot Directory" library="Selenium2Library">
 <doc>Sets the directory for captured screenshots.</doc>
 <arguments>
 <arg>Screenshot/</arg>
 </arguments>
-<status status="PASS" starttime="20180719 23:46:39.461" endtime="20180719 23:46:39.461"></status>
+<status status="PASS" starttime="20180720 00:01:53.445" endtime="20180720 00:01:53.445"></status>
 </kw>
-<status status="PASS" starttime="20180719 23:46:37.883" endtime="20180719 23:46:39.461"></status>
+<status status="PASS" starttime="20180720 00:01:51.863" endtime="20180720 00:01:53.445"></status>
 </kw>
 <kw name="Go To The Landing Page" library="landingpage">
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
-<arg>https://atomcream.com​</arg>
+<arg>https://atomcream.com</arg>
 </arguments>
-<msg timestamp="20180719 23:46:39.462" level="INFO">Opening url 'https://atomcream.com​'</msg>
-<status status="PASS" starttime="20180719 23:46:39.462" endtime="20180719 23:46:41.702"></status>
+<msg timestamp="20180720 00:01:53.446" level="INFO">Opening url 'https://atomcream.com'</msg>
+<status status="PASS" starttime="20180720 00:01:53.446" endtime="20180720 00:01:54.963"></status>
 </kw>
-<status status="PASS" starttime="20180719 23:46:39.462" endtime="20180719 23:46:41.703"></status>
+<status status="PASS" starttime="20180720 00:01:53.446" endtime="20180720 00:01:54.963"></status>
 </kw>
 <kw name="Verify That The Page Is Loaded" library="landingpage">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -42,32 +42,32 @@
 <arguments>
 <arg>TECHNOLOGY STACK</arg>
 </arguments>
-<status status="PASS" starttime="20180719 23:46:41.704" endtime="20180719 23:46:41.727"></status>
+<status status="PASS" starttime="20180720 00:01:54.964" endtime="20180720 00:01:54.987"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
 <arguments>
 <arg>landingPage.png</arg>
 </arguments>
-<msg timestamp="20180719 23:46:42.304" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshot/landingPage.png"&gt;&lt;img src="../Screenshot/landingPage.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20180719 23:46:41.727" endtime="20180719 23:46:42.304"></status>
+<msg timestamp="20180720 00:01:55.571" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshot/landingPage.png"&gt;&lt;img src="../Screenshot/landingPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180720 00:01:54.987" endtime="20180720 00:01:55.571"></status>
 </kw>
-<status status="PASS" starttime="20180719 23:46:41.703" endtime="20180719 23:46:42.305"></status>
+<status status="PASS" starttime="20180720 00:01:54.963" endtime="20180720 00:01:55.571"></status>
 </kw>
 <kw name="End Web Test" library="common" type="teardown">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20180719 23:46:42.305" endtime="20180719 23:46:42.368"></status>
+<status status="PASS" starttime="20180720 00:01:55.572" endtime="20180720 00:01:55.632"></status>
 </kw>
-<status status="PASS" starttime="20180719 23:46:42.305" endtime="20180719 23:46:42.368"></status>
+<status status="PASS" starttime="20180720 00:01:55.571" endtime="20180720 00:01:55.633"></status>
 </kw>
 <doc>This test checks that the landing page is loaded</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20180719 23:46:37.882" endtime="20180719 23:46:42.369" critical="yes"></status>
+<status status="PASS" starttime="20180720 00:01:51.862" endtime="20180720 00:01:55.633" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20180719 23:46:37.703" endtime="20180719 23:46:42.370"></status>
+<status status="PASS" starttime="20180720 00:01:51.724" endtime="20180720 00:01:55.634"></status>
 </suite>
 <statistics>
 <total>
